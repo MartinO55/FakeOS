@@ -9,15 +9,24 @@ body {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
 }
 footer .Taskbar {
   background-color: rgba(39, 39, 39, 0.808);
   padding: 0.55rem;
+  display: flex;
+  flex-direction: row;
 }
-footer .Taskbar__Start {
+footer .Taskbar .Taskbar__Start {
   background-image: url("images/icons8-windows-10-30White.png");
   background-repeat: no-repeat;
 }
-footer .Taskbar__Start:hover {
+footer .Taskbar .Taskbar__Start:hover {
   background-image: url("images/icons8-windows-10-30Blue.png");
+}
+footer .Taskbar .Taskbar__ClockHolder {
+  flex-direction: column;
+  font-size: 1rem;
+  margin: 0rem;
+  padding: 0rem;
 }/*# sourceMappingURL=styles.css.map */
