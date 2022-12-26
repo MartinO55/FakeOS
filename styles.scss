@@ -1,3 +1,5 @@
+@use "_theme";
+
 body {
   background-image: url("images/win10Background.jpg");
   background-size: cover;
@@ -12,7 +14,7 @@ footer {
   left: 0;
 
   .Taskbar {
-    background-color: rgba(39, 39, 39, 0.808);
+    background-color: $taskbarBlack;
     padding: 0.55rem;
     display: flex;
     flex-direction: row;
@@ -24,6 +26,10 @@ footer {
       &:hover {
         background-image: url("images/icons8-windows-10-30Blue.png");
       }
+    }
+    .Taskbar__Search {
+      background-color: $taskbarBlack;
+      margin: 5rem;
     }
 
     .Taskbar__ClockHolder {
