@@ -4,4 +4,20 @@ body {
   background-repeat: no-repeat;
   resize: both;
   overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+footer .Taskbar {
+  background-color: rgba(39, 39, 39, 0.808);
+  padding: 0.55rem;
+}
+footer .Taskbar__Start {
+  background-image: url("images/icons8-windows-10-30White.png");
+  background-repeat: no-repeat;
+}
+footer .Taskbar__Start:hover {
+  background-image: url("images/icons8-windows-10blue.svg");
 }/*# sourceMappingURL=styles.css.map */
