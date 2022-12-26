@@ -38,13 +38,24 @@
 
         <section class="Taskbar__AppHolder"></section>
 
-        <section class="TaskBar__IconHolder"></section>
+        <section class="TaskBar__IconHolder">
+          <span class="Taskbar__Icon" id="WifiIcon">
+            <img class="WifiConnection" src="images/icons8-connection-32.png" />
+          </span>
+          <span class="Taskbar__Icon" id="VolumeIcon">
+            <img class="muteIcon" src="images/icons8-mute-32.png" />
+          </span>
+          <span class="Taskbar__Icon" id="KeyboardLang"
+            ><span class="KeyboardLangIcon">ENG</span>
+          </span>
+          <!--Internet, sound, ENG -->
+        </section>
         <!--menu contains a flex section with content-->
         <section class="Taskbar__ClockHolder">
+          <!--TODO Display current time (with JS)-->
           <span class="taskbar__Clock">00:00:00</span>
           <span class="taskbar__Date">00/00/0000</span>
         </section>
-        <!--TODO Display current time (with JS)-->
       </section>
     </footer>
   </body>
