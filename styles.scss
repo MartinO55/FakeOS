@@ -1,4 +1,4 @@
-@use "_theme";
+@import "_theme";
 
 body {
   background-image: url("images/win10Background.jpg");
@@ -15,7 +15,7 @@ footer {
 
   .Taskbar {
     background-color: $taskbarBlack;
-    padding: 0.55rem;
+
     display: flex;
     flex-direction: row;
 
@@ -29,14 +29,20 @@ footer {
     }
     .Taskbar__Search {
       background-color: $taskbarBlack;
-      margin: 5rem;
+
+      border: 1px solid white;
+      &:hover {
+        border: 1px solid $taskbarSearchBarGrey;
+      }
+      .Taskbar__SearchBar {
+        background-color: $taskbarBlack;
+        color: $taskbarSearchBarGrey;
+      }
     }
 
     .Taskbar__ClockHolder {
       flex-direction: column;
       font-size: 1rem;
-      margin: 0rem;
-      padding: 0rem;
     }
   }
 }
