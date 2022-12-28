@@ -8,6 +8,12 @@ body {
   overflow: hidden;
 }
 
+.desktop__Icon {
+  img {
+    height: 5rem;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;
