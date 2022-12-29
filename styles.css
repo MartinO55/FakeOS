@@ -6,8 +6,28 @@ body {
   overflow: hidden;
 }
 
-.desktop__Icon img {
+.desktop .desktop__Icon img {
   height: 5rem;
+}
+
+.StartMenu {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(39, 39, 39, 0.808);
+}
+.StartMenu .StartMenu__Icons {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 3rem;
+  margin-left: 2rem;
+}
+.StartMenu .StartMenu__SettingsOptions {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.StartMenu .StartMenu__SettingsOptions img {
+  height: 1.5rem;
+  padding: 1rem;
 }
 
 footer {
@@ -27,6 +47,7 @@ footer .Taskbar .Taskbar__Start {
 }
 footer .Taskbar .Taskbar__Start:hover {
   background-image: url("images/icons8-windows-10-30Blue.png");
+  background-color: rgb(110, 110, 110);
 }
 footer .Taskbar .Taskbar__Search {
   background-color: rgba(39, 39, 39, 0.808);
