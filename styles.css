@@ -14,20 +14,24 @@ body {
   position: fixed;
   bottom: 0;
   background-color: rgba(39, 39, 39, 0.808);
-}
-.StartMenu .StartMenu__Icons {
+  left: 0;
   display: flex;
   flex-direction: column-reverse;
-  margin-bottom: 3rem;
-  margin-left: 2rem;
+}
+.StartMenu .StartMenu__Icons {
+  margin-left: 4rem;
 }
 .StartMenu .StartMenu__SettingsOptions {
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column-reverse;
 }
 .StartMenu .StartMenu__SettingsOptions img {
   height: 1.5rem;
   padding: 1rem;
+}
+.StartMenu .StartMenu__SettingsOptions img:hover {
+  background-color: rgb(110, 110, 110);
 }
 
 footer {
@@ -44,12 +48,14 @@ footer .Taskbar {
 footer .Taskbar .Taskbar__Start {
   background-image: url("images/icons8-windows-10-30White.png");
   background-repeat: no-repeat;
+  padding: 0.5rem;
 }
 footer .Taskbar .Taskbar__Start:hover {
   background-image: url("images/icons8-windows-10-30Blue.png");
   background-color: rgb(110, 110, 110);
 }
 footer .Taskbar .Taskbar__Search {
+  margin-left: 0.7rem;
   background-color: rgba(39, 39, 39, 0.808);
   align-self: center;
   border: 1.5px solid white;

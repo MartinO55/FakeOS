@@ -6,6 +6,7 @@ body {
   background-repeat: no-repeat;
   resize: both;
   overflow: hidden;
+  //add windows font
 }
 .desktop {
   .desktop__Icon {
@@ -20,19 +21,24 @@ body {
   position: fixed;
   bottom: 0;
   background-color: $taskbarBlack;
+  left: 0;
+  display: flex;
+  flex-direction: column-reverse;
 
   .StartMenu__Icons {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-bottom: 3rem; //hacky, but they are in the right place
-    margin-left: 2rem;
+    //margin-bottom: 1rem; //hacky, but they are in the right place
+    margin-left: 4rem;
   }
   .StartMenu__SettingsOptions {
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column-reverse;
     img {
       height: 1.5rem;
       padding: 1rem;
+      &:hover {
+        background-color: $taskbarHoverGrey;
+      }
     }
   }
 }
@@ -50,8 +56,9 @@ footer {
     //justify-content: space-between;
 
     .Taskbar__Start {
-      background-image: url("images/icons8-windows-10-30White.png");
+      background-image: url("images/icons8-windows-10-30White.png"); //this isn't centered
       background-repeat: no-repeat;
+      padding: 0.5rem;
 
       &:hover {
         background-image: url("images/icons8-windows-10-30Blue.png"); //this isn't the right blue
@@ -59,6 +66,7 @@ footer {
       }
     }
     .Taskbar__Search {
+      margin-left: 0.7rem;
       background-color: $taskbarBlack;
       align-self: center;
       border: 1.5px solid white;
