@@ -35,7 +35,7 @@ body {
 .StartMenu {
   position: fixed;
   bottom: 0;
-  background-color: rgba(39, 39, 39, 0.808);
+  background-color: rgb(49, 49, 49);
   left: 0;
   display: flex;
   flex-direction: column-reverse;
