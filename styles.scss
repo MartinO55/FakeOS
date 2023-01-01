@@ -9,9 +9,29 @@ body {
   //add windows font
 }
 .desktop {
+  display: grid;
+  gap: 1rem;
+  grid-area: auto;
+  grid-template-columns: minmax(0, 7rem);
+
   .desktop__Icon {
+    padding-bottom: 0.5rem;
     img {
       height: 5rem;
+    }
+    .desktop__Icon_shortcut {
+      height: 1rem !important;
+      transform: translateX(-5rem);
+    }
+    .desktop__Icon_name {
+      color: white;
+      margin: -0.25rem;
+      text-align: center;
+    }
+
+    &:hover {
+      border: solid $taskbarSearchBarGrey 2px;
+      background-color: $desktopIconHoverGrey;
     }
   }
 }

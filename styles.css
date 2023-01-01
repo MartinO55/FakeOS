@@ -6,8 +6,30 @@ body {
   overflow: hidden;
 }
 
+.desktop {
+  display: grid;
+  gap: 1rem;
+  grid-area: auto;
+  grid-template-columns: minmax(0, 7rem);
+}
+.desktop .desktop__Icon {
+  padding-bottom: 0.5rem;
+}
 .desktop .desktop__Icon img {
   height: 5rem;
+}
+.desktop .desktop__Icon .desktop__Icon_shortcut {
+  height: 1rem !important;
+  transform: translateX(-5rem);
+}
+.desktop .desktop__Icon .desktop__Icon_name {
+  color: white;
+  margin: -0.25rem;
+  text-align: center;
+}
+.desktop .desktop__Icon:hover {
+  border: solid rgb(182, 182, 182) 2px;
+  background-color: rgba(206, 206, 206, 0.233);
 }
 
 .StartMenu {
