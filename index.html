@@ -76,37 +76,45 @@
       <!--TODO TaskBar-->
       <section class="Taskbar">
         <!--TODO NAVBar with start menu -->
-        <section class="Taskbar__Start">
-          <img src="images/icons8-windows-10-30Alpha.png" />
+        <section class="taskBar--left">
+          <section class="Taskbar__Start">
+            <img src="images/icons8-windows-10-30Alpha.png" />
+          </section>
+          <section class="Taskbar__Search">
+            <img
+              class="Taskbar__SearchIcon"
+              src="images/icons8-search-32.png"
+            />
+            <input
+              class="Taskbar__SearchBar"
+              type="text"
+              placeholder="Type here to search"
+            />
+          </section>
+          <section class="Taskbar__AppHolder"></section>
         </section>
-        <section class="Taskbar__Search">
-          <img class="Taskbar__SearchIcon" src="images/icons8-search-32.png" />
-          <input
-            class="Taskbar__SearchBar"
-            type="text"
-            placeholder="Type here to search"
-          />
-        </section>
-
-        <section class="Taskbar__AppHolder"></section>
-
-        <section class="TaskBar__IconHolder">
-          <span class="Taskbar__Icon" id="WifiIcon">
-            <img class="WifiConnection" src="images/icons8-connection-32.png" />
-          </span>
-          <span class="Taskbar__Icon" id="VolumeIcon">
-            <img class="muteIcon" src="images/icons8-mute-32.png" />
-          </span>
-          <span class="Taskbar__Icon" id="KeyboardLang"
-            ><span class="KeyboardLangIcon">ENG</span>
-          </span>
-          <!--Internet, sound, ENG -->
-        </section>
-        <!--menu contains a flex section with content-->
-        <section class="Taskbar__ClockHolder">
-          <!--TODO Display current time (with JS)-->
-          <span class="taskbar__Clock">00:00:00</span>
-          <span class="taskbar__Date">00/00/0000</span>
+        <section class="taskBar--right">
+          <section class="TaskBar__IconHolder">
+            <span class="Taskbar__Icon" id="WifiIcon">
+              <img
+                class="WifiConnection"
+                src="images/icons8-connection-32.png"
+              />
+            </span>
+            <span class="Taskbar__Icon" id="VolumeIcon">
+              <img class="muteIcon" src="images/icons8-mute-32.png" />
+            </span>
+            <span class="Taskbar__Icon" id="KeyboardLang"
+              ><span class="KeyboardLangIcon">ENG</span>
+            </span>
+            <!--Internet, sound, ENG -->
+          </section>
+          <!--menu contains a flex section with content-->
+          <section class="Taskbar__ClockHolder">
+            <!--TODO Display current time (with JS)-->
+            <span class="taskbar__Clock">00:00:00</span>
+            <span class="taskbar__Date">00/00/0000</span>
+          </section>
         </section>
       </section>
     </footer>

@@ -69,49 +69,65 @@ footer .Taskbar {
   width: 100vw;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-footer .Taskbar .Taskbar__Start {
+footer .Taskbar .taskBar--left {
+  display: flex;
+  flex-direction: row;
+}
+footer .Taskbar .taskBar--left .Taskbar__Start {
+  position: absolute;
   background-image: url("images/icons8-windows-10-30White.png");
   background-repeat: no-repeat;
-  padding: 0.5rem;
 }
-footer .Taskbar .Taskbar__Start:hover {
+footer .Taskbar .taskBar--left .Taskbar__Start:hover {
   background-image: url("images/icons8-windows-10-30Blue.png");
   background-color: rgb(110, 110, 110);
 }
-footer .Taskbar .Taskbar__Search {
+footer .Taskbar .taskBar--left .Taskbar__Search {
+  position: absolute;
+  left: 2%;
   margin-left: 0.7rem;
   background-color: rgba(39, 39, 39, 0.808);
-  align-self: center;
   border: 1.5px solid white;
 }
-footer .Taskbar .Taskbar__Search:hover {
+footer .Taskbar .taskBar--left .Taskbar__Search:hover {
   border: 1.5px solid rgb(182, 182, 182);
+  background-color: rgb(110, 110, 110);
 }
-footer .Taskbar .Taskbar__Search .Taskbar__SearchBar {
+footer .Taskbar .taskBar--left .Taskbar__Search .Taskbar__SearchBar {
   background-color: rgba(39, 39, 39, 0.808);
   color: rgb(182, 182, 182);
   border-style: none;
   padding: 0.5rem;
 }
-footer .Taskbar .TaskBar__IconHolder {
+footer .Taskbar .taskBar--right {
+  display: flex;
+  flex-direction: row;
+}
+footer .Taskbar .taskBar--right .TaskBar__IconHolder {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
-footer .Taskbar .TaskBar__IconHolder .Taskbar__Icon span:hover {
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon span:hover {
   background-color: rgb(110, 110, 110);
 }
-footer .Taskbar .TaskBar__IconHolder .Taskbar__Icon img {
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon img {
   margin: 0.3rem;
 }
-footer .Taskbar .TaskBar__IconHolder .Taskbar__Icon img:hover {
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon img:hover {
   background-color: rgb(110, 110, 110);
 }
-footer .Taskbar .Taskbar__ClockHolder {
+footer .Taskbar .taskBar--right .KeyboardLangIcon {
+  text-align: center;
+  line-height: 3rem;
+}
+footer .Taskbar .taskBar--right .Taskbar__ClockHolder {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
 }
-footer .Taskbar .Taskbar__ClockHolder:hover {
+footer .Taskbar .taskBar--right .Taskbar__ClockHolder:hover {
   background-color: rgb(110, 110, 110);
 }/*# sourceMappingURL=styles.css.map */
