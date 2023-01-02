@@ -15,6 +15,7 @@ body {
 }
 .desktop .desktop__Icon {
   padding-bottom: 0.5rem;
+  border: solid 2px transparent;
 }
 .desktop .desktop__Icon img {
   height: 5rem;
