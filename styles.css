@@ -5,6 +5,7 @@ body {
   resize: both;
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
 }
 
 .desktop {
@@ -78,12 +79,13 @@ footer .Taskbar .taskBar--left {
 }
 footer .Taskbar .taskBar--left .Taskbar__Start {
   position: absolute;
+  top: 25%;
+  left: 0.25%;
   background-image: url("images/icons8-windows-10-30White.png");
   background-repeat: no-repeat;
 }
 footer .Taskbar .taskBar--left .Taskbar__Start:hover {
   background-image: url("images/icons8-windows-10-30Blue.png");
-  background-color: rgb(110, 110, 110);
 }
 footer .Taskbar .taskBar--left .Taskbar__Search {
   position: absolute;

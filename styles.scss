@@ -7,7 +7,7 @@ body {
   resize: both;
   overflow: hidden;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  //add windows font
+  height: 100vh;
 }
 .desktop {
   display: grid;
@@ -84,10 +84,11 @@ footer {
     .taskBar--left {
       display: flex;
       flex-direction: row;
+
       .Taskbar__Start {
         position: absolute;
-        //top: 25%;
-        //left: 0.25%;
+        top: 25%;
+        left: 0.25%;
         background-image: url("images/icons8-windows-10-30White.png"); //this isn't centered
         background-repeat: no-repeat;
         //background-color: red;
@@ -95,7 +96,6 @@ footer {
 
         &:hover {
           background-image: url("images/icons8-windows-10-30Blue.png"); //this isn't the right blue
-          background-color: $taskbarHoverGrey;
         }
       }
       .Taskbar__Search {
