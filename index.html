@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>FakeOS</title>
   </head>
   <body>
@@ -14,7 +15,7 @@
     <!--Apps must contain text, image or form-->
 
     <section class="desktop">
-      <section class="desktop__Icon" id="textfileModal">
+      <section class="desktop__Icon openable">
         <!--click the image, open the modal-->
         <img
           src="images/icons8-microsoft-word-30.png"
@@ -24,17 +25,20 @@
           src="images/icons8-shortcut-48.png"
         />
         <p class="desktop__Icon_name">A text File</p>
-        <span class="textFile__modal hidden">
-          <p class="textFile__modal--text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque
-            illum in maxime soluta expedita ratione quia provident dignissimos
-            eius, quos, dolorum possimus asperiores quibusdam illo nemo est quae
-            rerum? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Natus explicabo excepturi maiores vero harum laboriosam fuga quis
-            laudantium voluptate exercitationem earum fugiat ipsa, dolore itaque
-            nam autem quasi consectetur molestias.
-          </p>
-        </span>
+        <section class="modal" id="textfileModal">
+          <div class="hidden">
+            <div class="fileBar__close">X</div>
+            <p class="textFile__modal--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque
+              illum in maxime soluta expedita ratione quia provident dignissimos
+              eius, quos, dolorum possimus asperiores quibusdam illo nemo est
+              quae rerum? Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Natus explicabo excepturi maiores vero harum laboriosam fuga
+              quis laudantium voluptate exercitationem earum fugiat ipsa, dolore
+              itaque nam autem quasi consectetur molestias.
+            </p>
+          </div>
+        </section>
       </section>
       <section class="desktop__Icon" id="formfileModal">
         <img src="images/icons8-form-30.png" />

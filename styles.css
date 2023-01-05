@@ -41,8 +41,8 @@ body {
 .desktop .hidden {
   display: none;
 }
-.desktop .displayable {
-  display: block;
+.desktop .display {
+  display: flex;
 }
 
 .StartMenu {
