@@ -24,8 +24,10 @@ document.querySelectorAll(".openable").forEach((element) => {
 
 document.querySelectorAll(".fileBar__close").forEach((element) => {
   element.addEventListener("click", (event) => {
-    event.target.classList.add("hidden");
-    event.target.classList.remove("display");
+    let targetToHide = document.getElementById("textfileModal");
+
+    targetToHide.classList.add("hidden");
+    targetToHide.classList.remove("display");
   });
 });
 
