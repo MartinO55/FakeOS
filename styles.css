@@ -35,11 +35,14 @@ body {
   border: solid rgb(182, 182, 182) 2px;
   background-color: rgba(206, 206, 206, 0.233);
 }
-.desktop .textFile__modal {
-  display: none;
-}
 .desktop .textFile__modal .textFile__modal--text {
   background-color: white;
+}
+.desktop .hidden {
+  display: none;
+}
+.desktop .displayable {
+  display: block;
 }
 
 .StartMenu {

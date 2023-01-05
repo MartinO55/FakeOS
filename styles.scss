@@ -39,10 +39,16 @@ body {
   }
   .textFile__modal {
     //border: 2px solid red;
-    display: none;
+
     .textFile__modal--text {
       background-color: white;
     }
+  }
+  .hidden {
+    display: none;
+  }
+  .displayable {
+    display: block;
   }
 }
 
