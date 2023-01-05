@@ -37,6 +37,13 @@ body {
       background-color: $desktopIconHoverGrey;
     }
   }
+  .textFile__modal {
+    //border: 2px solid red;
+    display: none;
+    .textFile__modal--text {
+      background-color: white;
+    }
+  }
 }
 
 .StartMenu {
