@@ -1,7 +1,6 @@
+//functions that find the modal being targeted based on the id of the element being clicked
 const openModal = (targetToOpen) => {
-  //console.log("called the function");
-
-  let targetToChange = document.getElementById(targetToOpen + "--modal");
+  let targetToChange = document.getElementById(targetToOpen + "--modal"); //so because we name the html elements just so, these always find them in the right place
   targetToChange.classList.remove("hidden");
   targetToChange.classList.add("display");
 };
@@ -23,7 +22,6 @@ document.querySelectorAll(".openable").forEach((element) => {
 //close on click the X
 document.querySelectorAll(".fileBar__close").forEach((element) => {
   element.addEventListener("click", (event) => {
-    //console.log(element.id);
     closeModal(element.id);
   });
 });
