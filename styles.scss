@@ -37,13 +37,30 @@ body {
       background-color: $desktopIconHoverGrey;
     }
   }
-  .textFile__modal {
-    //border: 2px solid red;
+  #textfileModal--modal {
+    border: 2px solid black;
+    width: 30rem;
+    margin: 0;
+    transform: translateX(30rem);
+    position: absolute;
 
     .textFile__modal--text {
       background-color: white;
+      margin: 0;
     }
   }
+
+  #formModal--modal {
+    position: absolute;
+    transform: translateX(40rem);
+    width: 15rem;
+  }
+
+  #picturefileModal--modal {
+    position: absolute;
+    transform: translateX(20rem);
+  }
+  //these two should probably use animations, but call that later
   .hidden {
     display: none;
   }

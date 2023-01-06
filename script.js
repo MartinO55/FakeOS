@@ -7,7 +7,6 @@ const openModal = (targetToOpen) => {
 
 const closeModal = (targetToClose) => {
   let targetToHide = document.getElementById(targetToClose + "--modal");
-
   targetToHide.classList.add("hidden");
   targetToHide.classList.remove("display");
 };

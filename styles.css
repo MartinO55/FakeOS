@@ -35,8 +35,25 @@ body {
   border: solid rgb(182, 182, 182) 2px;
   background-color: rgba(206, 206, 206, 0.233);
 }
-.desktop .textFile__modal .textFile__modal--text {
+.desktop #textfileModal--modal {
+  border: 2px solid black;
+  width: 30rem;
+  margin: 0;
+  transform: translateX(30rem);
+  position: absolute;
+}
+.desktop #textfileModal--modal .textFile__modal--text {
   background-color: white;
+  margin: 0;
+}
+.desktop #formModal--modal {
+  position: absolute;
+  transform: translateX(40rem);
+  width: 15rem;
+}
+.desktop #picturefileModal--modal {
+  position: absolute;
+  transform: translateX(20rem);
 }
 .desktop .hidden {
   display: none;
