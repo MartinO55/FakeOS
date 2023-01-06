@@ -9,9 +9,6 @@
     <title>FakeOS</title>
   </head>
   <body>
-    <!--TODO Body Picture with background-->
-    <!--TODO 3 ICONS in a grid-->
-    <!-- ICons must link to apps via a modal-->
     <!--Apps must contain text, image or form-->
 
     <section class="desktop">
@@ -25,6 +22,7 @@
           src="images/icons8-shortcut-48.png"
         />
         <p class="desktop__Icon_name">A text File</p>
+
         <section class="modal hidden" id="textfileModal">
           <div>
             <div class="fileBar__close">X</div>
@@ -40,21 +38,37 @@
           </div>
         </section>
       </section>
-      <section class="desktop__Icon" id="formfileModal">
+
+      <section class="desktop__Icon openable" id="formfileModal">
         <img src="images/icons8-form-30.png" />
         <img
           class="desktop__Icon_shortcut"
           src="images/icons8-shortcut-48.png"
         />
         <p class="desktop__Icon_name">A Form</p>
+
+        <section class="modal hidden" id="formModal">
+          <div>
+            <div class="fileBar__close">X</div>
+            <div class="formFile__modal--form"></div>
+          </div>
+        </section>
       </section>
-      <section class="desktop__Icon" id="picturefileModal">
+
+      <section class="desktop__Icon openable" id="picturefileModal">
         <img src="images/icons8-picture-30.png" />
         <img
           class="desktop__Icon_shortcut"
           src="images/icons8-shortcut-48.png"
         />
         <p class="desktop__Icon_name">A Picture</p>
+
+        <section class="modal hidden" id="pictureModal">
+          <div>
+            <div class="fileBar__close">X</div>
+            <div class="pictureFile__modal--picture"></div>
+          </div>
+        </section>
       </section>
     </section>
     <!--On clicking start menu, show this section-->

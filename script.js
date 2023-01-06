@@ -1,7 +1,7 @@
 //Open stuff on doubleclick
 document.querySelectorAll(".openable").forEach((element) => {
   element.addEventListener("dblclick", (event) => {
-    let targetToChange = document.getElementById("textfileModal");
+    let targetToChange = document.getElementById("textfileModal"); //so this element may need to be different?
 
     targetToChange.classList.remove("hidden");
     targetToChange.classList.add("display");
