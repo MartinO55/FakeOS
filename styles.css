@@ -49,11 +49,16 @@ body {
 .desktop #formModal--modal {
   position: absolute;
   transform: translateX(40rem);
+}
+.desktop #formModal--modal .formFile__modal--form {
   width: 15rem;
 }
 .desktop #picturefileModal--modal {
   position: absolute;
   transform: translateX(20rem);
+}
+.desktop #picturefileModal--modal .pictureFile__windoge {
+  height: 20rem;
 }
 .desktop .hidden {
   display: none;

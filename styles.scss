@@ -53,12 +53,19 @@ body {
   #formModal--modal {
     position: absolute;
     transform: translateX(40rem);
-    width: 15rem;
+
+    .formFile__modal--form {
+      width: 15rem;
+    }
   }
 
   #picturefileModal--modal {
     position: absolute;
     transform: translateX(20rem);
+
+    .pictureFile__windoge {
+      height: 20rem;
+    }
   }
   //these two should probably use animations, but call that later
   .hidden {
