@@ -1,25 +1,29 @@
 const openModal = (targetToOpen) => {
-  console.log("called the function");
+  //console.log("called the function");
 
-  let targetToChange = document.getElementById("textfileModal"); //so this element may need to be different?
-
+  let targetToChange = document.getElementById(targetToOpen + "--modal");
   targetToChange.classList.remove("hidden");
   targetToChange.classList.add("display");
+};
+
+const closeModal = (targetToClose) => {
+  let targetToHide = document.getElementById(targetToClose + "--modal");
+
+  targetToHide.classList.add("hidden");
+  targetToHide.classList.remove("display");
 };
 
 //Open stuff on doubleclick
 document.querySelectorAll(".openable").forEach((element) => {
   element.addEventListener("dblclick", (event) => {
-    openModal(this);
+    openModal(element.id);
   });
 });
 
 //close on click the X
 document.querySelectorAll(".fileBar__close").forEach((element) => {
   element.addEventListener("click", (event) => {
-    let targetToHide = document.getElementById("textfileModal");
-
-    targetToHide.classList.add("hidden");
-    targetToHide.classList.remove("display");
+    //console.log(element.id);
+    closeModal(element.id);
   });
 });

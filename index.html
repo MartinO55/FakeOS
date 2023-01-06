@@ -12,7 +12,7 @@
     <!--Apps must contain text, image or form-->
 
     <section class="desktop">
-      <section class="desktop__Icon openable">
+      <section class="desktop__Icon openable" id="textfileModal">
         <!--click the image, open the modal-->
         <img
           src="images/icons8-microsoft-word-30.png"
@@ -23,10 +23,10 @@
         />
         <p class="desktop__Icon_name">A text File</p>
 
-        <section class="modal hidden" id="textfileModal">
+        <section class="modal hidden" id="textfileModal--modal">
           <!--Modal to open as the ID?-->
           <div>
-            <div class="fileBar__close">X</div>
+            <div class="fileBar__close" id="textfileModal">X</div>
             <p class="textFile__modal--text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque
               illum in maxime soluta expedita ratione quia provident dignissimos
@@ -40,7 +40,7 @@
         </section>
       </section>
 
-      <section class="desktop__Icon openable" id="formfileModal">
+      <section class="desktop__Icon openable" id="formModal">
         <img src="images/icons8-form-30.png" />
         <img
           class="desktop__Icon_shortcut"
@@ -48,9 +48,9 @@
         />
         <p class="desktop__Icon_name">A Form</p>
 
-        <section class="modal display" id="formModal">
+        <section class="modal hidden" id="formModal--modal">
           <div>
-            <div class="fileBar__close">X</div>
+            <div class="fileBar__close" id="formModal">X</div>
             <div class="formFile__modal--form">
               <form>
                 <!--Form goes here-->
@@ -81,9 +81,9 @@
         />
         <p class="desktop__Icon_name">A Picture</p>
 
-        <section class="modal hidden" id="pictureModal">
+        <section class="modal hidden" id="picturefileModal--modal">
           <div>
-            <div class="fileBar__close">X</div>
+            <div class="fileBar__close" id="picturefileModal">X</div>
             <div class="pictureFile__modal--picture">
               <img src="images/winDogeImg.jpg" alt="Windoge" />
             </div>
