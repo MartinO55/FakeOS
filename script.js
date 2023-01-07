@@ -17,16 +17,16 @@ const closeModal = (targetToClose) => {
 const openStartmenu = () => {
   //get the start menu group
   let startMenu = document.getElementById("StartMenu__holder");
-  startMenu.classList.add("");
-  startMenu.classList.remove("");
+  startMenu.classList.add("display");
+  startMenu.classList.remove("hidden");
   //show it
 };
 
 const closeStartmenu = () => {
   //get the start menu group
   let startMenu = document.getElementById("StartMenu__holder");
-  startMenu.classList.add("");
-  startMenu.classList.remove("");
+  startMenu.classList.add("hidden");
+  startMenu.classList.remove("display");
   //hide it
 };
 
