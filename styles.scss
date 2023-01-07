@@ -43,16 +43,25 @@ body {
     margin: 0;
     transform: translateX(30rem);
     position: absolute;
+    background-color: rgb(248, 248, 248);
+    z-index: 1;
+
+    .fileBar__close {
+      text-align: right;
+      padding-right: 0.5rem;
+    }
 
     .textFile__modal--text {
       background-color: white;
       margin: 0;
+      padding: 0.5rem;
     }
   }
 
   #formModal--modal {
     position: absolute;
     transform: translateX(40rem);
+    z-index: 1;
 
     .formFile__modal--form {
       width: 15rem;
@@ -62,6 +71,7 @@ body {
   #picturefileModal--modal {
     position: absolute;
     transform: translateX(20rem);
+    z-index: 1;
 
     .pictureFile__windoge {
       height: 20rem;
