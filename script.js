@@ -17,17 +17,17 @@ const closeModal = (targetToClose) => {
 const openStartmenu = () => {
   //get the start menu group
   let startMenu = document.getElementById("StartMenu__holder");
-  startMenu.classList.add("display");
-  startMenu.classList.remove("hidden");
   //show it
+  startMenu.classList.add("startDisplay");
+  startMenu.classList.remove("startHidden");
 };
 
 const closeStartmenu = () => {
   //get the start menu group
   let startMenu = document.getElementById("StartMenu__holder");
-  startMenu.classList.add("hidden");
-  startMenu.classList.remove("display");
   //hide it
+  startMenu.classList.add("startHidden");
+  startMenu.classList.remove("startDisplay");
 };
 
 //Open stuff on doubleclick
@@ -48,10 +48,12 @@ document.querySelectorAll(".Taskbar__Start--Button").forEach((element) => {
   element.addEventListener("click", (event) => {
     //if start menu is closed, open it - else if it is open, close it
     if (startMenuOpen) {
-      closeStartmenu();
       startMenuOpen = false;
-    } else openStartmenu();
-    startMenuOpen = true;
+      closeStartmenu();
+    } else if (!startMenuOpen) {
+      startMenuOpen = true;
+      openStartmenu();
+    }
 
     //pop up the start menu( really fast go up)
   });
