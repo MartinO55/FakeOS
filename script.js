@@ -58,3 +58,16 @@ document.querySelectorAll(".Taskbar__Start--Button").forEach((element) => {
     //pop up the start menu( really fast go up)
   });
 });
+
+//time and dates
+let timeAndDate = new Date();
+console.log(timeAndDate);
+document.getElementById(
+  "taskbar__Clock"
+).innerHTML = `${timeAndDate.getHours()}:${timeAndDate.getMinutes()}`;
+
+document.getElementById(
+  "taskbar__Date"
+).innerHTML = `${timeAndDate.getDate()}/${
+  timeAndDate.getMonth() + 1
+}/${timeAndDate.getFullYear()}`;
