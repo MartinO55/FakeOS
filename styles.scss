@@ -46,9 +46,40 @@ body {
     background-color: rgb(248, 248, 248);
     z-index: 1;
 
-    .fileBar__close {
-      text-align: right;
-      padding-right: 0.5rem;
+    .filebar {
+      display: flex;
+      justify-content: right;
+      flex-direction: row-reverse;
+      align-items: center;
+
+      .fileBar__maximise__holder {
+        &:hover {
+          background-color: $taskbarSearchBarGrey;
+        }
+        .fileBar__maximise {
+          border: 1px solid black;
+          width: 10px;
+          height: 10px;
+          margin: 0.5rem;
+          margin: 0.5rem;
+        }
+      }
+      .fileBar_minimise {
+        margin: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        &:hover {
+          background-color: $taskbarSearchBarGrey;
+        }
+      }
+      .fileBar__close {
+        padding: 0.3rem;
+
+        &:hover {
+          background-color: rgb(255, 38, 0);
+          color: white;
+        }
+      }
     }
 
     .textFile__modal--text {
@@ -62,9 +93,54 @@ body {
     position: absolute;
     transform: translateX(40rem);
     z-index: 1;
+    background-color: white;
+
+    .filebar {
+      display: flex;
+      justify-content: right;
+      flex-direction: row-reverse;
+      align-items: center;
+      border-bottom: 2px solid black;
+
+      .fileBar__close {
+        padding: 0.5rem;
+
+        &:hover {
+          background-color: rgb(255, 38, 0);
+          color: white;
+        }
+      }
+      .fileBar__maximise__holder {
+        &:hover {
+          background-color: $taskbarSearchBarGrey;
+        }
+        .fileBar__maximise {
+          border: 1px solid black;
+          width: 10px;
+          height: 10px;
+          margin: 0.5rem;
+        }
+      }
+      .fileBar_minimise {
+        margin: 0.2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        &:hover {
+          background-color: $taskbarSearchBarGrey;
+        }
+      }
+    }
 
     .formFile__modal--form {
-      width: 15rem;
+      width: 25rem;
+
+      .formFile__modal__formContents {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        margin: 1rem;
+        padding: 0.5rem;
+      }
     }
   }
 

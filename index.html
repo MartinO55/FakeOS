@@ -26,7 +26,13 @@
         <section class="modal hidden" id="textfileModal--modal">
           <!--Modal to open as the ID?-->
           <div>
-            <div class="fileBar__close" id="textfileModal">X</div>
+            <div class="filebar">
+              <div class="fileBar__close" id="textfileModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
             <p class="textFile__modal--text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque
               illum in maxime soluta expedita ratione quia provident dignissimos
@@ -50,23 +56,35 @@
 
         <section class="modal hidden" id="formModal--modal">
           <div>
-            <div class="fileBar__close" id="formModal">X</div>
+            <div class="filebar">
+              <div class="fileBar__close" id="formModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
             <div class="formFile__modal--form">
-              <form>
+              <form class="formFile__modal__formContents">
                 <!--Form goes here-->
-                <input type="text" placeholder="Please enter your full name" />
-                <input
-                  type="password"
-                  placeholder="Please enter your password"
-                />
-                <label for="birthday">Please enter your birthday </label>
+                <h3>Identity Theft Form</h3>
+                <label for="name">Please enter your full name:</label>
+                <input type="text" />
+                <div><br /></div>
+                <label for="password">Please enter your password:</label>
+                <input type="password" />
+                <div><br /></div>
+                <label for="birthday">Please enter your birthday:</label>
                 <input type="date" />
-                <input type="email" placeholder="please enter your email" />
-                <input
-                  type="text"
-                  placeholder="please enter your credit card details"
-                />
-                <input type="submit" />
+                <div><br /></div>
+                <label for="email">Please enter your email:</label>
+                <input type="email" />
+                <div><br /></div>
+                <label for="CCdetails"
+                  >Please enter your credit card details:</label
+                >
+                <input type="text" pattern="[0-9]{16}" />
+                <div><br /></div>
+                <input type="submit" value="Submit" />
               </form>
             </div>
           </div>
