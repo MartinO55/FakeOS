@@ -13,6 +13,7 @@ const closeModal = (targetToClose) => {
   targetToHide.classList.remove("display");
 };
 
+//open and close start menu functions
 const openStartmenu = () => {
   //get the start menu group
   let startMenu = document.getElementById("StartMenu__holder");
