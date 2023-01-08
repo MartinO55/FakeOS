@@ -198,6 +198,16 @@ body {
   .display {
     display: flex;
   }
+
+  .dragging {
+  }
+  .draggable {
+    cursor: pointer;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transition: border-radius 0.5s ease-out, background-color 0.5s ease-out;
+  }
 }
 
 .StartMenu {
