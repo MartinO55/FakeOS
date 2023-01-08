@@ -37,6 +37,12 @@ document.querySelectorAll(".openable").forEach((element) => {
   });
 });
 
+document.querySelectorAll(".startOpenable").forEach((element) => {
+  element.addEventListener("click", (event) => {
+    openModal(element.id);
+  });
+});
+
 //close on click the X
 document.querySelectorAll(".fileBar__close").forEach((element) => {
   element.addEventListener("click", (event) => {

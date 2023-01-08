@@ -21,7 +21,7 @@
           class="desktop__Icon_shortcut"
           src="images/icons8-shortcut-48.png"
         />
-        <p class="desktop__Icon_name">A text File</p>
+        <p class="desktop__Icon_name">text</p>
 
         <section class="modal hidden" id="textfileModal--modal">
           <!--Modal to open as the ID?-->
@@ -52,7 +52,7 @@
           class="desktop__Icon_shortcut"
           src="images/icons8-shortcut-48.png"
         />
-        <p class="desktop__Icon_name">A Form</p>
+        <p class="desktop__Icon_name">Identity Theft.pdf</p>
 
         <section class="modal hidden" id="formModal--modal">
           <div>
@@ -97,11 +97,17 @@
           class="desktop__Icon_shortcut"
           src="images/icons8-shortcut-48.png"
         />
-        <p class="desktop__Icon_name">A Picture</p>
+        <p class="desktop__Icon_name">haha funny doggy</p>
 
         <section class="modal hidden" id="picturefileModal--modal">
           <div>
-            <div class="fileBar__close" id="picturefileModal">X</div>
+            <div class="filebar">
+              <div class="fileBar__close" id="picturefileModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
             <div class="pictureFile__modal--picture">
               <img
                 class="pictureFile__windoge"
@@ -134,14 +140,26 @@
         </section>
       </section>
       <section class="StartMenu__Icons">
-        <section class="StartMenu__IconLink">
-          <img src="images/icons8-microsoft-word-30.png" />
+        <section class="StartMenu__IconLink startOpenable" id="textfileModal">
+          <img
+            class="startMenu__Icon--pic"
+            src="images/icons8-microsoft-word-30.png"
+          />
+          <p>lorem Ipsum text</p>
         </section>
-        <section class="StartMenu__IconLink">
-          <img src="images/icons8-form-30.png" />
+        <section class="StartMenu__IconLink startOpenable" id="formModal">
+          <img class="startMenu__Icon--pic" src="images/icons8-form-30.png" />
+          <p>identity theft form</p>
         </section>
-        <section class="StartMenu__IconLink">
-          <img src="images/icons8-picture-30.png" />
+        <section
+          class="StartMenu__IconLink startOpenable"
+          id="picturefileModal"
+        >
+          <img
+            class="startMenu__Icon--pic"
+            src="images/icons8-picture-30.png"
+          />
+          <p>windoge.jpg</p>
         </section>
       </section>
     </section>
