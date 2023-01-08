@@ -37,6 +37,7 @@ document.querySelectorAll(".openable").forEach((element) => {
   });
 });
 
+//open stuff fron the start menu with a single click
 document.querySelectorAll(".startOpenable").forEach((element) => {
   element.addEventListener("click", (event) => {
     openModal(element.id);

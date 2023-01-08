@@ -2,20 +2,9 @@
 
 ## Project Outline
 
-- For this, I am going to choose to do a windows 10 OS - Primarily because I have a model for it directly on screen behind this one.
+- For this project, I have chosen to replicate a windows 10 desktop operating system. this selection was made entirely because I am running windows 10 myself, making it much simpler to identify elements and replicate details quickly. Being a desktop OS, the design orientation is landscape mode.
 
-- We will use
-
-## Overview
-
-The goal of this project is to have students explore and consolidate their understandings of HTML, CSS and JavaScript.
-This project will require you to replicate the layout and format of a design/image using CSS, add content via HTML and control the interactive elements via JavaScript.
-
-### The design is going to be that of an operating system
-
-Please look at the provided image gallery for examples.
-You should choose either a portrait (mobile) or landscape (desktop) operating system, you are not expected to create a responsive page that works on both, however it should look good on the chosen orientation at different resolutions/ratios.
-You will select one of the provided images, or your own as approved by a coach.
+- I have used a combination of HTML, CSS and SASS, as well as javascript to create the primary elements of the MVP. The FakeOS is actually a single page website with modals used to simulate different applications. There are three of these "apps", including a text element, a form, and an image. These can be opened either by double clicking the desktop "shortcut" icons, or via a single click of the relevant app icon in the start menu. The start menu is accessed by clicking the windows image in the bottom left corner, and displays various system icons with no functionality, as well as the apps themselves, which can be opened by clicking on them. The apps can be closed using the close button ("X") in the top right corner of each. Any number of the modals can be open at any one time, with their close buttons being unique to each of them. The time and date is also taken from the users local time zone and displayed in the bottom right corner when the page is loaded.
 
 ### Features
 
@@ -54,18 +43,3 @@ You will select one of the provided images, or your own as approved by a coach.
 - Push all changes to your develop branch
 - When submitting create a pull request from develop into main for review
 - Add coach as a reviewer
-
-## Hints
-
-- Split your js logic/data modules from your js DOM modules
-- Look at the position css property, specifically _fixed_ and _absolute_
-- Pay attention to your hierarchy of elements in your html
-- Create your modals using JS and DOM interaction
-- Make your life easy! You don't need to recreate everything, just do the features and mvp mentioned above
-
-### Useful Resources
-
-- [Cutting a Monster Project Down to a Manageable Size](https://www.informit.com/articles/article.aspx?p=2153472)
-
-- [Is Your Code DRY or WET?](https://dzone.com/articles/is-your-code-dry-or-wet#:~:text=DRY%20code%20is%20a%20software,t%20adhere%20to%20DRY%20principle.)
-- [What are Pure Functions and Side Effects in JavaScript?](https://blog.greenroots.info/what-are-pure-functions-and-side-effects-in-javascript)

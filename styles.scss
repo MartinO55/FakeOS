@@ -261,6 +261,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: white;
 
     .taskBar--left {
       display: flex;
@@ -307,7 +308,7 @@ footer {
         display: flex;
         justify-content: center;
         text-align: center;
-        //padding-top: 1rem;
+
         .Taskbar__Icon span {
           &:hover {
             background-color: $taskbarHoverGrey;
@@ -316,7 +317,7 @@ footer {
 
         .Taskbar__Icon img {
           margin: 0.3rem;
-
+          padding: 0.2rem;
           &:hover {
             background-color: $taskbarHoverGrey;
           }
@@ -325,12 +326,14 @@ footer {
       .KeyboardLangIcon {
         text-align: center;
         line-height: 3rem;
+        padding: 0.7rem;
       }
 
       .Taskbar__ClockHolder {
         display: flex;
         flex-direction: column;
         font-size: 1rem;
+        margin-left: 1rem;
         &:hover {
           background-color: $taskbarHoverGrey;
         }
