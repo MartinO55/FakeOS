@@ -107,6 +107,5 @@ document.querySelectorAll(".draggable").forEach((element) => {
     dragOffsetX = event.offsetX;
     dragOffsetY = event.offsetY;
     event.target.classList.add("dragging");
-    console.log("dragging");
   });
 });

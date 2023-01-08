@@ -80,6 +80,11 @@ body {
   margin: 0;
   padding: 0.5rem;
 }
+@media screen and (max-width: 1000px) {
+  .desktop #textfileModal--modal {
+    left: -20rem;
+  }
+}
 .desktop #formModal--modal {
   position: absolute;
   transform: translateX(40rem);
@@ -126,6 +131,11 @@ body {
   align-content: flex-start;
   margin: 1rem;
   padding: 0.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .desktop #formModal--modal {
+    left: -25rem;
+  }
 }
 .desktop #picturefileModal--modal {
   position: absolute;
@@ -175,12 +185,20 @@ body {
 .desktop .display {
   display: flex;
 }
+.desktop .dragging {
+  cursor: pointer;
+}
 .desktop .draggable {
   cursor: pointer;
   position: fixed;
   top: 0px;
   left: 0px;
   transition: border-radius 0.5s ease-out, background-color 0.5s ease-out;
+}
+@media screen and (max-width: 1000px) {
+  .desktop .draggable {
+    left: -7rem;
+  }
 }
 
 .StartMenu {
@@ -191,6 +209,12 @@ body {
   flex-direction: column-reverse;
   height: 50vh;
   width: 30vw;
+}
+@media screen and (max-width: 1000px) {
+  .StartMenu {
+    height: 70vh;
+    width: 70vw;
+  }
 }
 .StartMenu .StartMenu__IconLink {
   display: flex;
@@ -265,6 +289,11 @@ footer .Taskbar .taskBar--left .Taskbar__Search {
 footer .Taskbar .taskBar--left .Taskbar__Search:hover {
   border: 1.5px solid rgb(182, 182, 182);
   background-color: rgb(110, 110, 110);
+}
+@media screen and (max-width: 1000px) {
+  footer .Taskbar .taskBar--left .Taskbar__Search {
+    margin-left: 3rem;
+  }
 }
 footer .Taskbar .taskBar--left .Taskbar__Search .Taskbar__SearchBar {
   background-color: rgba(39, 39, 39, 0.808);
