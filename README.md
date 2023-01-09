@@ -6,6 +6,12 @@
 
 - I have used a combination of HTML, CSS and SASS, as well as javascript to create the primary elements of the MVP. The FakeOS is actually a single page website with modals used to simulate different applications. There are three of these "apps", including a text element, a form, and an image. These can be opened either by double clicking the desktop "shortcut" icons, or via a single click of the relevant app icon in the start menu. The start menu is accessed by clicking the windows image in the bottom left corner, and displays various system icons with no functionality, as well as the apps themselves, which can be opened by clicking on them. The apps can be closed using the close button ("X") in the top right corner of each. Any number of the modals can be open at any one time, with their close buttons being unique to each of them. The time and date is also taken from the users local time zone and displayed in the bottom right corner when the page is loaded.
 
+### Links
+
+- Github Repo: <https://github.com/MartinO55/FakeOS>
+
+- Live deployment: <https://martino55.github.io/FakeOS/>
+
 ### Features
 
 - You will be creating an SPA (Single Page Application)
