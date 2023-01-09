@@ -4,13 +4,213 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>FakeOS</title>
   </head>
   <body>
-    <!--TODO Body Picture with background-->
+    <!--Apps must contain text, image or form-->
+
+    <section class="desktop">
+      <section class="desktop__Icon openable" id="textfileModal">
+        <!--click the image, open the modal-->
+        <img
+          src="images/icons8-microsoft-word-30.png"
+        /><!--TODO create the modals. each modal needs a unique ID, but a common class-->
+        <img
+          class="desktop__Icon_shortcut"
+          src="images/icons8-shortcut-48.png"
+        />
+        <p class="desktop__Icon_name">text.txt</p>
+
+        <section class="modal hidden draggable" id="textfileModal--modal">
+          <!--Modal to open as the ID?-->
+          <div>
+            <div class="filebar">
+              <div class="fileBar__close" id="textfileModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
+            <p class="textFile__modal--text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea itaque
+              illum in maxime soluta expedita ratione quia provident dignissimos
+              eius, quos, dolorum possimus asperiores quibusdam illo nemo est
+              quae rerum? Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Natus explicabo excepturi maiores vero harum laboriosam fuga
+              quis laudantium voluptate exercitationem earum fugiat ipsa, dolore
+              itaque nam autem quasi consectetur molestias.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <section class="desktop__Icon openable" id="formModal">
+        <img src="images/icons8-form-30.png" />
+        <img
+          class="desktop__Icon_shortcut"
+          src="images/icons8-shortcut-48.png"
+        />
+        <p class="desktop__Icon_name">Identity Theft.pdf</p>
+
+        <section class="modal hidden draggable" id="formModal--modal">
+          <div>
+            <div class="filebar">
+              <div class="fileBar__close" id="formModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
+            <div class="formFile__modal--form">
+              <form class="formFile__modal__formContents">
+                <!--Form goes here-->
+                <h3>Identity Theft Form</h3>
+                <label for="name">Please enter your full name:</label>
+                <input type="text" />
+                <div><br /></div>
+                <label for="password">Please enter your password:</label>
+                <input type="password" />
+                <div><br /></div>
+                <label for="birthday">Please enter your birthday:</label>
+                <input type="date" />
+                <div><br /></div>
+                <label for="email">Please enter your email:</label>
+                <input type="email" />
+                <div><br /></div>
+                <label for="CCdetails"
+                  >Please enter your credit card details:</label
+                >
+                <input type="text" pattern="[0-9]{16}" />
+                <div><br /></div>
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="desktop__Icon openable" id="picturefileModal">
+        <img src="images/icons8-picture-30.png" />
+        <img
+          class="desktop__Icon_shortcut"
+          src="images/icons8-shortcut-48.png"
+        />
+        <p class="desktop__Icon_name">haha funny doggy.jpg.jpg</p>
+
+        <section class="modal hidden draggable" id="picturefileModal--modal">
+          <div>
+            <div class="filebar">
+              <div class="fileBar__close" id="picturefileModal">X</div>
+              <div class="fileBar__maximise__holder">
+                <div class="fileBar__maximise"></div>
+              </div>
+              <div class="fileBar_minimise">___</div>
+            </div>
+            <div class="pictureFile__modal--picture">
+              <img
+                class="pictureFile__windoge"
+                src="images/winDogeImg.jpg"
+                alt="Windoge"
+              />
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+    <!--On clicking start menu, show this section-->
+    <section class="StartMenu startHidden" id="StartMenu__holder">
+      <section class="StartMenu__SettingsOptions">
+        <!--IDK what to call this, but it has the power button and stuff-->
+        <section class="StartMenu__PowerButton">
+          <img src="images/icons8-shutdown-50.png" />
+        </section>
+        <section class="StartMenu__SettingsButton">
+          <img src="images/icons8-settings-48.png" />
+        </section>
+        <section class="StartMenu__PicturesButton">
+          <img src="images/icons8-image-gallery-50.png" />
+        </section>
+        <section class="StartMenu__DocumentsButton">
+          <img src="images/icons8-file-48.png" />
+        </section>
+        <section class="StartMenu__UserButton">
+          <img src="images/icons8-user-64.png" />
+        </section>
+      </section>
+      <section class="StartMenu__Icons">
+        <section class="StartMenu__IconLink startOpenable" id="textfileModal">
+          <img
+            class="startMenu__Icon--pic"
+            src="images/icons8-microsoft-word-30.png"
+          />
+          <p>lorem Ipsum text</p>
+        </section>
+        <section class="StartMenu__IconLink startOpenable" id="formModal">
+          <img class="startMenu__Icon--pic" src="images/icons8-form-30.png" />
+          <p>identity theft form</p>
+        </section>
+        <section
+          class="StartMenu__IconLink startOpenable"
+          id="picturefileModal"
+        >
+          <img
+            class="startMenu__Icon--pic"
+            src="images/icons8-picture-30.png"
+          />
+          <p>windoge.jpg</p>
+        </section>
+      </section>
+    </section>
 
     <footer>
       <!--TODO TaskBar-->
+      <section class="Taskbar">
+        <!--TODO NAVBar with start menu -->
+        <section class="taskBar--left">
+          <section class="Taskbar__StartHolder">
+            <section class="Taskbar__Start--Button">
+              <img src="images/icons8-windows-10-30Alpha.png" />
+            </section>
+          </section>
+          <section class="Taskbar__Search">
+            <img
+              class="Taskbar__SearchIcon"
+              src="images/icons8-search-32.png"
+            />
+            <input
+              class="Taskbar__SearchBar"
+              type="text"
+              placeholder="Type here to search"
+            />
+          </section>
+          <section class="Taskbar__AppHolder"></section>
+        </section>
+        <section class="taskBar--right">
+          <section class="TaskBar__IconHolder">
+            <span class="Taskbar__Icon" id="WifiIcon">
+              <img
+                class="WifiConnection"
+                src="images/icons8-connection-32.png"
+              />
+            </span>
+            <span class="Taskbar__Icon" id="VolumeIcon">
+              <img class="muteIcon" src="images/icons8-mute-32.png" />
+            </span>
+            <span class="Taskbar__Icon" id="KeyboardLang"
+              ><span class="KeyboardLangIcon">ENG</span>
+            </span>
+            <!--Internet, sound, ENG -->
+          </section>
+          <!--menu contains a flex section with content-->
+          <section class="Taskbar__ClockHolder">
+            <!--TODO Display current time (with JS)-->
+            <span class="taskbar__Clock" id="taskbar__Clock">00:00:00</span>
+            <span class="taskbar__Date" id="taskbar__Date">00/00/0000</span>
+          </section>
+        </section>
+      </section>
     </footer>
   </body>
 </html>

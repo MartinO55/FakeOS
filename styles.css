@@ -1,0 +1,336 @@
+body {
+  background-image: url("images/win10Background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  resize: both;
+  overflow: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.desktop {
+  display: grid;
+  gap: 1rem;
+  grid-area: auto;
+  grid-template-columns: minmax(0, 7rem);
+}
+.desktop .desktop__Icon {
+  padding-bottom: 0.5rem;
+  border: solid 2px transparent;
+}
+.desktop .desktop__Icon img {
+  height: 5rem;
+}
+.desktop .desktop__Icon .desktop__Icon_shortcut {
+  height: 1rem !important;
+  transform: translateX(-5rem);
+}
+.desktop .desktop__Icon .desktop__Icon_name {
+  color: white;
+  margin: -0.25rem;
+  text-align: center;
+}
+.desktop .desktop__Icon:hover {
+  border: solid rgb(182, 182, 182) 2px;
+  background-color: rgba(206, 206, 206, 0.233);
+}
+.desktop #textfileModal--modal {
+  border: 2px solid black;
+  width: 30rem;
+  margin: 0;
+  transform: translateX(30rem);
+  position: absolute;
+  background-color: rgb(248, 248, 248);
+  z-index: 1;
+}
+.desktop #textfileModal--modal .filebar {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.desktop #textfileModal--modal .filebar .fileBar__maximise__holder:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #textfileModal--modal .filebar .fileBar__maximise__holder .fileBar__maximise {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+  margin: 0.5rem;
+  margin: 0.5rem;
+}
+.desktop #textfileModal--modal .filebar .fileBar_minimise {
+  margin: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.desktop #textfileModal--modal .filebar .fileBar_minimise:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #textfileModal--modal .filebar .fileBar__close {
+  padding: 0.3rem;
+}
+.desktop #textfileModal--modal .filebar .fileBar__close:hover {
+  background-color: rgb(255, 38, 0);
+  color: white;
+}
+.desktop #textfileModal--modal .textFile__modal--text {
+  background-color: white;
+  margin: 0;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .desktop #textfileModal--modal {
+    left: -20rem;
+  }
+}
+.desktop #formModal--modal {
+  position: absolute;
+  transform: translateX(40rem);
+  z-index: 1;
+  background-color: white;
+}
+.desktop #formModal--modal .filebar {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+.desktop #formModal--modal .filebar .fileBar__close {
+  padding: 0.5rem;
+}
+.desktop #formModal--modal .filebar .fileBar__close:hover {
+  background-color: rgb(255, 38, 0);
+  color: white;
+}
+.desktop #formModal--modal .filebar .fileBar__maximise__holder:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #formModal--modal .filebar .fileBar__maximise__holder .fileBar__maximise {
+  border: 1px solid black;
+  width: 10px;
+  height: 10px;
+  margin: 0.5rem;
+}
+.desktop #formModal--modal .filebar .fileBar_minimise {
+  margin: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.desktop #formModal--modal .filebar .fileBar_minimise:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #formModal--modal .formFile__modal--form {
+  width: 25rem;
+}
+.desktop #formModal--modal .formFile__modal--form .formFile__modal__formContents {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .desktop #formModal--modal {
+    left: -25rem;
+  }
+}
+.desktop #picturefileModal--modal {
+  position: absolute;
+  transform: translateX(20rem);
+  z-index: 1;
+}
+.desktop #picturefileModal--modal .filebar {
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  align-items: center;
+  border-bottom: 2px solid black;
+  background-color: rgb(49, 49, 49);
+}
+.desktop #picturefileModal--modal .filebar .fileBar__close {
+  padding: 0.5rem;
+  color: white;
+}
+.desktop #picturefileModal--modal .filebar .fileBar__close:hover {
+  background-color: rgb(255, 38, 0);
+  color: white;
+}
+.desktop #picturefileModal--modal .filebar .fileBar__maximise__holder:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #picturefileModal--modal .filebar .fileBar__maximise__holder .fileBar__maximise {
+  border: 1px solid white;
+  width: 10px;
+  height: 10px;
+  margin: 0.5rem;
+}
+.desktop #picturefileModal--modal .filebar .fileBar_minimise {
+  margin: 0.2rem;
+  color: white;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.desktop #picturefileModal--modal .filebar .fileBar_minimise:hover {
+  background-color: rgb(182, 182, 182);
+}
+.desktop #picturefileModal--modal .pictureFile__windoge {
+  height: 20rem;
+}
+.desktop .hidden {
+  display: none;
+}
+.desktop .display {
+  display: flex;
+}
+.desktop .dragging {
+  cursor: pointer;
+}
+.desktop .draggable {
+  cursor: pointer;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transition: border-radius 0.5s ease-out, background-color 0.5s ease-out;
+}
+@media screen and (max-width: 1000px) {
+  .desktop .draggable {
+    left: -7rem;
+  }
+}
+
+.StartMenu {
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(49, 49, 49);
+  left: 0;
+  flex-direction: column-reverse;
+  height: 50vh;
+  width: 30vw;
+}
+@media screen and (max-width: 1000px) {
+  .StartMenu {
+    height: 70vh;
+    width: 70vw;
+  }
+}
+.StartMenu .StartMenu__IconLink {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding: 0.1rem;
+}
+.StartMenu .StartMenu__IconLink:hover {
+  background-color: rgb(110, 110, 110);
+}
+.StartMenu .startMenu__Icon--pic {
+  margin: 0.5rem;
+}
+.StartMenu .StartMenu__Icons {
+  margin-left: 4rem;
+}
+.StartMenu .StartMenu__SettingsOptions {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.StartMenu .StartMenu__SettingsOptions img {
+  height: 1.5rem;
+  padding: 1rem;
+}
+.StartMenu .StartMenu__SettingsOptions img:hover {
+  background-color: rgb(110, 110, 110);
+}
+
+.startHidden {
+  display: none;
+}
+
+.startDisplay {
+  display: flex;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+footer .Taskbar {
+  background-color: rgba(39, 39, 39, 0.808);
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+footer .Taskbar .taskBar--left {
+  display: flex;
+  flex-direction: row;
+}
+footer .Taskbar .taskBar--left .Taskbar__StartHolder {
+  position: absolute;
+  top: 25%;
+  left: 0.25%;
+  background-image: url("images/icons8-windows-10-30White.png");
+  background-repeat: no-repeat;
+}
+footer .Taskbar .taskBar--left .Taskbar__StartHolder:hover {
+  background-image: url("images/icons8-windows-10-30Blue.png");
+}
+footer .Taskbar .taskBar--left .Taskbar__Search {
+  position: absolute;
+  left: 2%;
+  margin-left: 0.7rem;
+  background-color: rgba(39, 39, 39, 0.808);
+  border: 1.5px solid white;
+}
+footer .Taskbar .taskBar--left .Taskbar__Search:hover {
+  border: 1.5px solid rgb(182, 182, 182);
+  background-color: rgb(110, 110, 110);
+}
+@media screen and (max-width: 1000px) {
+  footer .Taskbar .taskBar--left .Taskbar__Search {
+    margin-left: 3rem;
+  }
+}
+footer .Taskbar .taskBar--left .Taskbar__Search .Taskbar__SearchBar {
+  background-color: rgba(39, 39, 39, 0.808);
+  color: rgb(182, 182, 182);
+  border-style: none;
+  padding: 0.5rem;
+}
+footer .Taskbar .taskBar--right {
+  display: flex;
+  flex-direction: row;
+}
+footer .Taskbar .taskBar--right .TaskBar__IconHolder {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon span:hover {
+  background-color: rgb(110, 110, 110);
+}
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon img {
+  margin: 0.3rem;
+  padding: 0.2rem;
+}
+footer .Taskbar .taskBar--right .TaskBar__IconHolder .Taskbar__Icon img:hover {
+  background-color: rgb(110, 110, 110);
+}
+footer .Taskbar .taskBar--right .KeyboardLangIcon {
+  text-align: center;
+  line-height: 3rem;
+  padding: 0.7rem;
+}
+footer .Taskbar .taskBar--right .Taskbar__ClockHolder {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+footer .Taskbar .taskBar--right .Taskbar__ClockHolder:hover {
+  background-color: rgb(110, 110, 110);
+}/*# sourceMappingURL=styles.css.map */
