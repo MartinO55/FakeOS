@@ -207,7 +207,7 @@ body {
   background-color: rgb(49, 49, 49);
   left: 0;
   flex-direction: column-reverse;
-  height: 50vh;
+  height: 60vh;
   width: 30vw;
 }
 @media screen and (max-width: 1000px) {
