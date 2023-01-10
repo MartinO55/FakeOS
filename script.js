@@ -39,14 +39,19 @@ const display_time = () => {
   let timeAndDate = new Date();
 
   let minuteAdjust = timeAndDate.getMinutes();
+  let secondAdjust = timeAndDate.getSeconds();
 
   if (minuteAdjust < 10) {
     minuteAdjust = "0" + minuteAdjust;
   }
 
+  if (secondAdjust < 10) {
+    secondAdjust = "0" + secondAdjust;
+  }
+
   document.getElementById(
     "taskbar__Clock"
-  ).innerHTML = `${timeAndDate.getHours()}:${minuteAdjust}:${timeAndDate.getSeconds()}`;
+  ).innerHTML = `${timeAndDate.getHours()}:${minuteAdjust}:${secondAdjust}`;
 
   document.getElementById(
     "taskbar__Date"
