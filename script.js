@@ -30,6 +30,29 @@ const closeStartmenu = () => {
   startMenu.classList.remove("startDisplay");
 };
 
+const updateTime = () => {
+  const refresh = 1000;
+  mytime = setTimeout("display_time()", refresh);
+};
+
+const display_time = () => {
+  let timeAndDate = new Date();
+
+  document.getElementById(
+    "taskbar__Clock"
+  ).innerHTML = `${timeAndDate.getHours()}:${timeAndDate.getMinutes()}:${timeAndDate.getSeconds()}`;
+
+  document.getElementById(
+    "taskbar__Date"
+  ).innerHTML = `${timeAndDate.getDate()}/${
+    timeAndDate.getMonth() + 1
+  }/${timeAndDate.getFullYear()}`;
+
+  updateTime();
+};
+
+updateTime();
+
 //Open stuff on doubleclick
 document.querySelectorAll(".openable").forEach((element) => {
   element.addEventListener("dblclick", (event) => {
@@ -67,17 +90,6 @@ document.querySelectorAll(".Taskbar__Start--Button").forEach((element) => {
 });
 
 //time and dates
-let timeAndDate = new Date();
-console.log(timeAndDate);
-document.getElementById(
-  "taskbar__Clock"
-).innerHTML = `${timeAndDate.getHours()}:${timeAndDate.getMinutes()}`;
-
-document.getElementById(
-  "taskbar__Date"
-).innerHTML = `${timeAndDate.getDate()}/${
-  timeAndDate.getMonth() + 1
-}/${timeAndDate.getFullYear()}`;
 
 //making modals draggable; this took as long as you think it did to implement
 // create a variable that references the element we want to drag - initialize to null
